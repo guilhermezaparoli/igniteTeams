@@ -1,4 +1,4 @@
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 import { ThemeProvider } from 'styled-components/native';
 import { defaultTheme } from './src/theme';
 import {
@@ -20,7 +20,7 @@ export default function App() {
       backgroundColor="transparent"
       translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
